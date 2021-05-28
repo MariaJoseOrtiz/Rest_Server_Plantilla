@@ -1,4 +1,6 @@
 const {validationResult}=require('express-validator');
+const { existeEmail } = require('../helpers/db-validators');
+const usuario = require('../models/usuario');
 
 
 const validarCampos = (req,res, next) => {
@@ -9,6 +11,7 @@ const validarCampos = (req,res, next) => {
   }
   next();
 }
+
 
 module.exports = {
   validarCampos
