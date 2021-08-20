@@ -14,7 +14,7 @@ const UsuarioSchema = Schema({
     type:String,
     required:[true,'La contrasena es obligatoria'],
   },
-  imag:{
+  img:{
     type:String,
   },
   rol:{
